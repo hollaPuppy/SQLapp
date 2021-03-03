@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{452BAA78-2EA2-4323-BA8A-4E66550F4DE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFilm.Designer.cs">
+      <DependentUpon>AddFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMesto.Designer.cs">
+      <DependentUpon>AddMesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPrav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPrav.Designer.cs">
+      <DependentUpon>AddPrav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSeans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSeans.Designer.cs">
+      <DependentUpon>AddSeans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoorBilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoorBilet.Designer.cs">
+      <DependentUpon>LoorBilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otchet_bilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet_bilet.Designer.cs">
+      <DependentUpon>Otchet_bilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otchet_vir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet_vir.Designer.cs">
+      <DependentUpon>Otchet_vir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka.Designer.cs">
+      <DependentUpon>Spravka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViborSeans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViborSeans.Designer.cs">
+      <DependentUpon>ViborSeans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassSQL.cs" />
+    <Compile Include="BeginFormAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeginFormAuto.Designer.cs">
+      <DependentUpon>BeginFormAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesto.Designer.cs">
+      <DependentUpon>Mesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oplata.Designer.cs">
+      <DependentUpon>Oplata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PokupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokupForm.Designer.cs">
+      <DependentUpon>PokupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersForm.Designer.cs">
+      <DependentUpon>PersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PokupatelAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokupatelAuto.Designer.cs">
+      <DependentUpon>PokupatelAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddFilm.resx">
+      <DependentUpon>AddFilm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMesto.resx">
+      <DependentUpon>AddMesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPrav.resx">
+      <DependentUpon>AddPrav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSeans.resx">
+      <DependentUpon>AddSeans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeginFormAuto.resx">
+      <DependentUpon>BeginFormAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoorBilet.resx">
+      <DependentUpon>LoorBilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otchet_bilet.resx">
+      <DependentUpon>Otchet_bilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otchet_vir.resx">
+      <DependentUpon>Otchet_vir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka.resx">
+      <DependentUpon>Spravka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViborSeans.resx">
+      <DependentUpon>ViborSeans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesto.resx">
+      <DependentUpon>Mesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oplata.resx">
+      <DependentUpon>Oplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokupForm.resx">
+      <DependentUpon>PokupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersForm.resx">
+      <DependentUpon>PersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokupatelAuto.resx">
+      <DependentUpon>PokupatelAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
